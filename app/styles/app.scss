@@ -2,24 +2,50 @@ $darkgray: #3a4345;
 $lightgray: #DAEEF3;
 
 body {
-  background-color: #16A9C7;
+  background-image: linear-gradient(100deg, #31d4e5 5%, #16A9c7 50%);
   color: $darkgray;
+  font-family: 'Open Sans', sans-serif;
 }
 
 li {
   list-style-type: none;
 }
 
-.jumbotron {
+h2, h3, h4, h5, p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form {
+  color: #FFFFFF;
+}
+
+.container {
   background-color: $darkgray;
   color: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Open Sans', sans-serif;
 }
-.breadcrumb {
-  float: right;
-  background-color: $lightgray;
-  color: #FFFFFF;
+.button {
+  align-self: center;
 }
+
+.menu {
+  background-color: $darkgray;
+}
+
+
 .well {
   background-color: $lightgray;
+  color: $darkgray;
+  border: none;
 
+}
+
+#introText {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3.5em;
 }

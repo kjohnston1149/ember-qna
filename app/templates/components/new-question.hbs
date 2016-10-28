@@ -15,8 +15,8 @@
         {{input value=content id="content"}}
       </div>
       <button class="ui button" {{action 'saveQuestion'}}>Ask!</button>
-    </form>  
+    </form>
   </div>
 {{else}}
-<button class="ui button" {{action 'questionFormShow'}}>New Question</button>
+<button id="newQuestion" class="ui icon right floated button" data-content="Ask a new question" {{action 'questionFormShow'}}><i class="add icon"></i></button>
 {{/if}}
