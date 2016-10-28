@@ -1,9 +1,25 @@
-$color: red;
+$darkgray: #3a4345;
+$lightgray: #DAEEF3;
+
+body {
+  background-color: #16A9C7;
+  color: $darkgray;
+}
 
 li {
   list-style-type: none;
 }
 
+.jumbotron {
+  background-color: $darkgray;
+  color: #FFFFFF;
+}
 .breadcrumb {
   float: right;
+  background-color: $lightgray;
+  color: #FFFFFF;
+}
+.well {
+  background-color: $lightgray;
+
 }
