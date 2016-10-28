@@ -1,0 +1,19 @@
+{{#if addNewAnswer}}
+  <h3>Answer this questions!</h3>
+  <div>
+    <form class="ui form">
+      <div class="field">
+        <label for="author">Name:</label>
+        {{input value=author id="author"}}
+      </div>
+      <div class="field">
+        <label for="content">Answer:</label>
+        {{input value=content id="content"}}
+      </div>
+      <button class="ui button" {{action 'saveAnswer'}}>Answer!</button>
+    </form>
+  </div>
+{{else}}
+<button class="ui button" {{action 'answerFormShow'}}>Answer this</button>
+{{/if}}
+  
