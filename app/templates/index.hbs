@@ -1,3 +1,9 @@
 <p>
   a test to see if index is working correctly
 </p>
+
+<ul>
+  {{#each model as |question|}}
+    <li>{{question.title}} - posted by {{question.author}}</li>
+  {{/each}}
+</ul>
