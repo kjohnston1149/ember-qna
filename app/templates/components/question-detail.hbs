@@ -4,4 +4,11 @@
   "<em>{{question.content}}</em>" - {{question.author}}
 </p>
 
+<h3>Answers</h3>
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+
 <button class="ui icon button"{{action 'delete' question}}><i class="trash icon"></i></button>
