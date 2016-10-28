@@ -4,6 +4,6 @@
 
 <ul>
   {{#each model as |question|}}
-    <li>{{question.title}} - posted by {{question.author}}</li>
+    {{question-tile question=question}}
   {{/each}}
 </ul>
