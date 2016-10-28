@@ -1,6 +1,6 @@
 <li class="well">
-  <h4>{{question.title}}</h4>
+  {{#link-to 'question' question.id}}<h4>{{question.title}}</h4>{{/link-to}}
   <p> - posted by {{question.author}}</p>
-  {{edit-question question=question edit="edit"}}
-  <button class="ui icon button"{{action 'delete' question}}><i class="trash icon"></i></button>
+
+
 </li>
