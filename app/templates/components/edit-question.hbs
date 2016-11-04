@@ -10,8 +10,8 @@
         <label for="author">Who's asking?</label>
         {{input value=author id="author" placeholder=question.author}}
       </div>
-      {{#ui-dropdown class="selection" selected="type" onChange=(action (mut type))}}
-        <div class="default text">{{question.type}}</div>
+      {{#ui-dropdown class="selection" selected="classification" onChange=(action (mut classification))}}
+        <div class="default text">{{question.classification}}</div>
         <i class="dropdown icon"></i>
         <div class="menu">
           <div class="item" value="general">

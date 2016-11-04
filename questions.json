@@ -1,11 +1,11 @@
 {"questions": [{
   "title": "Do whales hunt other whales?",
-  "type": "vertabate",
+  "classification": "marine vertabrates",
   "author": "JaSON Params",
   "content": "I know some whales eat fish, but do any actively hunt other whales or dolphins?"
 }, {
   "title": "What is the loudest animal on the planet?",
-  "type": "vertabate",
+  "classification": "marine vertabrates",
   "author": "Beth",
   "content": "I know that there are a lot of loud things on land (like my family), but are there louder things in the ocean?"
   }]
