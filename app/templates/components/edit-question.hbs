@@ -10,6 +10,21 @@
         <label for="author">Who's asking?</label>
         {{input value=author id="author" placeholder=question.author}}
       </div>
+      {{#ui-dropdown class="selection" selected="type" onChange=(action (mut type))}}
+        <div class="default text">{{question.type}}</div>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <div class="item" value="general">
+            General Question
+          </div>
+          <div class="item" value="vertabrate">
+            Marine Vertabrates
+          </div>
+          <div class="item" value="invertabrate">
+            Marine Invertabrates
+          </div>
+        </div>
+          {{/ui-dropdown}}
       <div class="field">
         <label for="content">Question Details</label>
         {{input value=content id="content" placeholder=question.content}}
