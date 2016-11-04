@@ -3,13 +3,11 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   savedQuestion: Ember.inject.service(),
 
-  // answerCount: Ember.computed('question.answers', function() {
-  //   var total = this.get('question').answers;
-  //   console.log(total);
-  //   return total[].length;
-  //
-  //
-  // }),
+  secondaryDisplay: Ember.computed('question.classification','question.author', function() {
+    return 'Posted in ' + this.get('question.classification') + ' by ' + this.get('question.author');
+
+
+  }),
 
   actions: {
     saveThisQuestion(question) {
