@@ -10,6 +10,27 @@
         <label for="author">Who's asking?</label>
         {{input value=author id="author"}}
       </div>
+      <!-- <div class="field">
+        <label for="type">Who's asking?</label>
+        {{input value=type id="type"}}
+      </div> -->
+      {{#ui-dropdown class="selection" selected="type" onChange=(action (mut type))}}
+        <div class="default text">Question Type</div>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+
+            <div class="item" value="general">
+              General Question
+            </div>
+            <div class="item" value="vertabrate">
+              Marine Vertabrates
+            </div>
+            <div class="item" value="invertabrate">
+              Marine Invertabrates
+            </div>
+
+        </div>
+      {{/ui-dropdown}}
       <div class="field">
         <label for="content">Explain your question:</label>
         {{input value=content id="content"}}

@@ -3,6 +3,7 @@
 
   {{#link-to 'question' question.id}}<h3>{{question.title}}</h3>{{/link-to}}
   <p> - posted by {{question.author}}</p>
+  <p>Type: {{question.type}}</p>
   <i class="save large icon" {{action 'saveThisQuestion' question}}></i>
 
 

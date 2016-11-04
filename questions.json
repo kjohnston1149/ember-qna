@@ -1,17 +1,13 @@
 {"questions": [{
   "title": "Do whales hunt other whales?",
+  "type": "vertabate",
   "author": "JaSON Params",
   "content": "I know some whales eat fish, but do any actively hunt other whales or dolphins?"
 }, {
   "title": "What is the loudest animal on the planet?",
+  "type": "vertabate",
   "author": "Beth",
   "content": "I know that there are a lot of loud things on land (like my family), but are there louder things in the ocean?"
-  }],
-"answers": [{
-  "author": "Kevin",
-  "content": "Yes, orcas will often hunt other whales like humpbacks or grey whales.  APEX PRED!"
-}, {
-  "author": "Kera",
-  "content": "Blue whales have been heard accross oceans, so I'd say that's pretty loud!"
   }]
+
 }
