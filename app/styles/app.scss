@@ -11,7 +11,7 @@ li {
   list-style-type: none;
 }
 
-h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
@@ -38,7 +38,7 @@ label {
   background-color: $darkgray;
   color: #FFFFFF;
   width: 80%;
-  border-radius: 10px;
+
   margin-top: 60px;
   padding-top: 15px;
   padding-bottom: 15px;

@@ -2,6 +2,7 @@
 
 {{#each savedQuestion.questions as |question|}}
   <div class="well">
+    {{classification-icon question.classification}}
     {{#link-to 'question' question.id}}<h3>{{question.title}}</h3>{{/link-to}}
     <p> - posted by {{question.author}}</p>
   </div>
