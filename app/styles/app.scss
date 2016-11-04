@@ -61,7 +61,11 @@ label {
   display: block;
 
 }
-
+.countIcons {
+  height: 25px;
+  column-rule-color: white;
+  margin-right: 8px;
+}
 .save.large.icon {
   cursor: pointer;
 }
@@ -89,6 +93,8 @@ label {
   font-family: 'Open Sans', sans-serif;
   font-size: 3.5em;
 }
+
+
 
 #homeLink {
 
