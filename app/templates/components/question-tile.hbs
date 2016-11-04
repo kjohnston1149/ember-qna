@@ -1,6 +1,11 @@
-<li class="well">
+<div class="well">
+<li>
+
   {{#link-to 'question' question.id}}<h3>{{question.title}}</h3>{{/link-to}}
   <p> - posted by {{question.author}}</p>
+  <i class="save large icon" {{action 'saveThisQuestion' question}}></i>
+
 
 
 </li>
+</div>
