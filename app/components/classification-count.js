@@ -4,13 +4,16 @@ export default Ember.Component.extend({
 
   generalQuestion: Ember.computed(function(question) {
 
-    var gen = Ember.get(question, 'classification');
-    console.log(gen);
-    var general = [];
-    if (gen === "general question") {
-      gen.objectPush(general);
-    };
-    return general.length;
+    var general = 0;
+    this.get('questions').forEach(function(question) {
+      // debugger;
+      var gen = question.get('data').classification;
+      if (gen === "general question") {
+        general++;
+      }
+
+    });
+    return general;
 
   }),
   vertabrateQuestion: Ember.computed(function(question) {
