@@ -2,11 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
-  generalQuestion: Ember.computed(function(question) {
+  generalQuestion: Ember.computed(function() {
 
     var general = 0;
     this.get('questions').forEach(function(question) {
-      // debugger;
       var gen = question.get('data').classification;
       if (gen === "general question") {
         general++;
@@ -16,24 +15,28 @@ export default Ember.Component.extend({
     return general;
 
   }),
-  vertabrateQuestion: Ember.computed(function(question) {
-      var verts = this.get('question')
-      var vertabrates = [];
-      if (question.classification === "marine vertabrates") {
-        this.get('question').objectPush(vertabrates);
-      };
-      return vertabrates.length;
+  vertabrateQuestion: Ember.computed(function() {
+    var vertabrates = 0;
+    this.get('questions').forEach(function(question) {
+      var vert = question.get('data').classification;
+      if (vert === "marine vertabrates") {
+        vertabrates++;
+      }
 
+    });
+    return vertabrates;
   }),
 
-  invertabrateQuestion: Ember.computed(function(question) {
-      var inverts = this.get('question')
-      var invertabrates = [];
-      if (question.classification === "marine invertabrates") {
-        this.get('question').objectPush(vertabrates);
-      };
-      return invertabrates.length;
+  invertabrateQuestion: Ember.computed(function() {
+    var invertabrates = 0;
+    this.get('questions').forEach(function(question) {
+      var invert = question.get('data').classification;
+      if (invert === "marine invertabrates") {
+        invertabrates++;
+      }
 
+    });
+    return invertabrates;
   }),
 
 });
